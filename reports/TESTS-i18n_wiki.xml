@@ -1,0 +1,134 @@
+<testsuite name="i18n_wiki.Wikipedia Multi-language Support" tests="4" errors="4" failures="0" skipped="0" time="2.915367" timestamp="2026-02-20T13:19:24.766776" hostname="Niranjans-MacBook-Pro.local"><testcase classname="i18n_wiki.Wikipedia Multi-language Support" name="Navigation in different languages -- @1.1 " status="error" time="0.690645"><error type="NoneType" message="None">
+<![CDATA[
+Failing step: And search placeholder should be in "English" ... undefined in 0.000s
+Location: features/i18n_wiki.feature:7
+None]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Navigation in different languages -- @1.1 
+    Given I visit Wikipedia in "en" ... passed in 0.677s
+    Then I should see main page title in "English" ... passed in 0.013s
+    And date format should match "en" ... passed in 0.000s
+    And search placeholder should be in "English" ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Navigation in different languages -- @1.1  (Locale: en-US)
+
+❌ Finished scenario: Navigation in different languages -- @1.1  - Status.error
+
+✓ Opened Wikipedia in en
+✓ Page is in English
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="i18n_wiki.Wikipedia Multi-language Support" name="Navigation in different languages -- @1.2 " status="error" time="0.731845"><error type="NoneType" message="None">
+<![CDATA[
+Failing step: And search placeholder should be in "Spanish" ... undefined in 0.000s
+Location: features/i18n_wiki.feature:7
+None]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Navigation in different languages -- @1.2 
+    Given I visit Wikipedia in "es" ... passed in 0.721s
+    Then I should see main page title in "Spanish" ... passed in 0.011s
+    And date format should match "es" ... passed in 0.000s
+    And search placeholder should be in "Spanish" ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Navigation in different languages -- @1.2  (Locale: en-US)
+
+❌ Finished scenario: Navigation in different languages -- @1.2  - Status.error
+
+✓ Opened Wikipedia in es
+✓ Page is in Spanish
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="i18n_wiki.Wikipedia Multi-language Support" name="Navigation in different languages -- @1.3 " status="error" time="0.738745"><error type="NoneType" message="None">
+<![CDATA[
+Failing step: And search placeholder should be in "Arabic" ... undefined in 0.000s
+Location: features/i18n_wiki.feature:7
+None]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Navigation in different languages -- @1.3 
+    Given I visit Wikipedia in "ar" ... passed in 0.720s
+    Then I should see main page title in "Arabic" ... passed in 0.014s
+    And date format should match "ar" ... passed in 0.004s
+    And search placeholder should be in "Arabic" ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Navigation in different languages -- @1.3  (Locale: en-US)
+
+❌ Finished scenario: Navigation in different languages -- @1.3  - Status.error
+
+✓ Opened Wikipedia in ar
+✓ Page is in Arabic
+✓ RTL direction confirmed
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="i18n_wiki.Wikipedia Multi-language Support" name="Navigation in different languages -- @1.4 " status="error" time="0.754131"><error type="NoneType" message="None">
+<![CDATA[
+Failing step: And search placeholder should be in "Japanese" ... undefined in 0.000s
+Location: features/i18n_wiki.feature:7
+None]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Navigation in different languages -- @1.4 
+    Given I visit Wikipedia in "ja" ... passed in 0.742s
+    Then I should see main page title in "Japanese" ... passed in 0.012s
+    And date format should match "ja" ... passed in 0.000s
+    And search placeholder should be in "Japanese" ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Navigation in different languages -- @1.4  (Locale: en-US)
+
+❌ Finished scenario: Navigation in different languages -- @1.4  - Status.error
+
+✓ Opened Wikipedia in ja
+✓ Page is in Japanese
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase></testsuite>

@@ -1,0 +1,300 @@
+<testsuite name="i18n_login.Multi-language Login" tests="5" errors="4" failures="0" skipped="0" time="92.553366" timestamp="2026-02-20T13:12:12.480977" hostname="Niranjans-MacBook-Pro.local"><testcase classname="i18n_login.Multi-language Login" name="Login page in different languages -- @1.1 " status="error" time="33.869102"><error type="TimeoutError" message="Page.text_content: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;h1&quot;)">
+<![CDATA[
+Failing step: Then the login title should be "Login" ... error in 30.012s
+Location: features/i18n_login.feature:10
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features/steps/login_steps.py", line 59, in step_verify_login_title
+    title = context.login_page.get_title()
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/login_page.py", line 50, in get_title
+    return self.get_text(self.TITLE)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/base_page.py", line 29, in get_text
+    return self.page.text_content(selector)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 10797, in text_content
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.text_content(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            selector=selector, strict=strict, timeout=timeout
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_page.py", line 976, in text_content
+    return await self._main_frame.text_content(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 705, in text_content
+    return await self._channel.send(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "textContent", self._timeout, locals_to_params(locals())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.text_content: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("h1")
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login page in different languages -- @1.1 
+    Given locale is "en-US" ... passed in 0.272s
+    And I am on the login page ... passed in 3.585s
+    Then the login title should be "Login" ... error in 30.012s
+    And I should see "Username" ... skipped in 0.000s
+    And I should see "Password" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Login page in different languages -- @1.1  (Locale: en-US)
+
+❌ Finished scenario: Login page in different languages -- @1.1  - Status.error
+
+✓ Set locale to: en-US
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="i18n_login.Multi-language Login" name="Login page in different languages -- @1.2 " status="error" time="33.865887"><error type="TimeoutError" message="Page.text_content: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;h1&quot;)">
+<![CDATA[
+Failing step: Then the login title should be "Iniciar Sesión" ... error in 30.004s
+Location: features/i18n_login.feature:10
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features/steps/login_steps.py", line 59, in step_verify_login_title
+    title = context.login_page.get_title()
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/login_page.py", line 50, in get_title
+    return self.get_text(self.TITLE)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/base_page.py", line 29, in get_text
+    return self.page.text_content(selector)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 10797, in text_content
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.text_content(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            selector=selector, strict=strict, timeout=timeout
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_page.py", line 976, in text_content
+    return await self._main_frame.text_content(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 705, in text_content
+    return await self._channel.send(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "textContent", self._timeout, locals_to_params(locals())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.text_content: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("h1")
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login page in different languages -- @1.2 
+    Given locale is "es-ES" ... passed in 0.364s
+    And I am on the login page ... passed in 3.498s
+    Then the login title should be "Iniciar Sesión" ... error in 30.004s
+    And I should see "Nombre de Usuario" ... skipped in 0.000s
+    And I should see "Contraseña" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Login page in different languages -- @1.2  (Locale: en-US)
+
+❌ Finished scenario: Login page in different languages -- @1.2  - Status.error
+
+✓ Set locale to: es-ES
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="i18n_login.Multi-language Login" name="Login page in different languages -- @1.3 " status="error" time="9.781476"><error type="TargetClosedError" message="Page.text_content: Target page, context or browser has been closed&#10;Call log:&#10;  - waiting for locator(&quot;h1&quot;)">
+<![CDATA[
+Failing step: Then the login title should be "Connexion" ... error in 6.171s
+Location: features/i18n_login.feature:10
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features/steps/login_steps.py", line 59, in step_verify_login_title
+    title = context.login_page.get_title()
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/login_page.py", line 50, in get_title
+    return self.get_text(self.TITLE)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/base_page.py", line 29, in get_text
+    return self.page.text_content(selector)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 10797, in text_content
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.text_content(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            selector=selector, strict=strict, timeout=timeout
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_page.py", line 976, in text_content
+    return await self._main_frame.text_content(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 705, in text_content
+    return await self._channel.send(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+        "textContent", self._timeout, locals_to_params(locals())
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.text_content: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("h1")
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login page in different languages -- @1.3 
+    Given locale is "fr-FR" ... passed in 0.180s
+    And I am on the login page ... passed in 3.430s
+    Then the login title should be "Connexion" ... error in 6.171s
+    And I should see "Nom d'utilisateur" ... skipped in 0.000s
+    And I should see "Mot de passe" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Login page in different languages -- @1.3  (Locale: en-US)
+
+❌ Finished scenario: Login page in different languages -- @1.3  - Status.error
+
+✓ Set locale to: fr-FR
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="i18n_login.Multi-language Login" name="Login page in different languages -- @1.4 " status="hook_error" time="15.036901"><error type="KeyboardInterrupt" message="">
+<![CDATA[
+Failing step: Then the login title should be "Anmelden" ... error in 11.623s
+Location: features/i18n_login.feature:10
+ABORTED: By user (KeyboardInterrupt).]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Login page in different languages -- @1.4 
+    Given locale is "de-DE" ... passed in 0.190s
+    And I am on the login page ... passed in 3.224s
+    Then the login title should be "Anmelden" ... error in 11.623s
+    And I should see "Benutzername" ... skipped in 0.000s
+    And I should see "Passwort" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Login page in different languages -- @1.4  (Locale: en-US)
+
+✓ Set locale to: de-DE
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+ABORTED: KeyboardInterrupt
+
+]]>
+</system-err></testcase><testcase classname="i18n_login.Multi-language Login" name="RTL language support -- @1.1 " status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: RTL language support -- @1.1 
+    Given locale is "ar-SA" ... untested in 0.000s
+    And I am on the login page ... untested in 0.000s
+    Then the page direction should be RTL ... untested in 0.000s
+    And text direction should be "rtl" ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

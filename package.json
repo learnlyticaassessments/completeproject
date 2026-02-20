@@ -1,0 +1,16 @@
+{
+  "name": "playwright-bdd-i18n-complete",
+  "version": "1.0.0",
+  "description": "Complete Playwright BDD i18n testing solution",
+  "scripts": {
+    "test": "behave",
+    "test:smoke": "behave --tags=@smoke",
+    "test:i18n": "behave --tags=@i18n",
+    "test:parallel": "behave --parallel 2",
+    "test:report": "behave -f html -o reports/report.html",
+    "codegen": "playwright codegen",
+    "install": "playwright install"
+  },
+  "keywords": ["playwright", "bdd", "i18n", "testing"],
+  "author": "Learnlytica"
+}

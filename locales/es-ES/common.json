@@ -1,0 +1,33 @@
+{
+  "welcome": "Bienvenido",
+  "greeting": "Hola, {{name}}",
+  "login": {
+    "title": "Iniciar Sesión",
+    "username": "Nombre de Usuario",
+    "password": "Contraseña",
+    "submit": "Entrar",
+    "forgot": "¿Olvidaste tu Contraseña?",
+    "success": "Inicio de sesión exitoso",
+    "error": "Credenciales inválidas"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "products": "Productos",
+    "cart": "Carrito"
+  },
+  "items": {
+    "zero": "Sin artículos",
+    "one": "{{count}} artículo",
+    "other": "{{count}} artículos"
+  },
+  "date": {
+    "format": "DD/MM/YYYY",
+    "today": "Hoy"
+  },
+  "currency": {
+    "symbol": "€",
+    "format": "{{amount}} €"
+  }
+}

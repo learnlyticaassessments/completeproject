@@ -1,0 +1,33 @@
+{
+  "welcome": "ようこそ",
+  "greeting": "こんにちは、{{name}}さん",
+  "login": {
+    "title": "ログイン",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "submit": "サインイン",
+    "forgot": "パスワードをお忘れですか？",
+    "success": "ログイン成功",
+    "error": "無効な認証情報"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "について",
+    "contact": "お問い合わせ",
+    "products": "商品",
+    "cart": "カート"
+  },
+  "items": {
+    "zero": "アイテムなし",
+    "one": "{{count}}個",
+    "other": "{{count}}個"
+  },
+  "date": {
+    "format": "YYYY/MM/DD",
+    "today": "今日"
+  },
+  "currency": {
+    "symbol": "¥",
+    "format": "¥{{amount}}"
+  }
+}

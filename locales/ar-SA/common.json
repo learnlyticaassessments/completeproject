@@ -1,0 +1,33 @@
+{
+  "welcome": "مرحبا",
+  "greeting": "مرحبا، {{name}}",
+  "login": {
+    "title": "تسجيل الدخول",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "submit": "دخول",
+    "forgot": "نسيت كلمة المرور؟",
+    "success": "تم تسجيل الدخول بنجاح",
+    "error": "بيانات اعتماد غير صالحة"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "products": "المنتجات",
+    "cart": "السلة"
+  },
+  "items": {
+    "zero": "لا توجد عناصر",
+    "one": "عنصر {{count}}",
+    "other": "{{count}} عناصر"
+  },
+  "date": {
+    "format": "DD/MM/YYYY",
+    "today": "اليوم"
+  },
+  "currency": {
+    "symbol": "ر.س",
+    "format": "{{amount}} ر.س"
+  }
+}

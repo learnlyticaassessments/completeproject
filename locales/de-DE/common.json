@@ -1,0 +1,33 @@
+{
+  "welcome": "Willkommen",
+  "greeting": "Hallo, {{name}}",
+  "login": {
+    "title": "Anmelden",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "submit": "Einloggen",
+    "forgot": "Passwort vergessen?",
+    "success": "Anmeldung erfolgreich",
+    "error": "Ungültige Anmeldedaten"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "products": "Produkte",
+    "cart": "Warenkorb"
+  },
+  "items": {
+    "zero": "Keine Artikel",
+    "one": "{{count}} Artikel",
+    "other": "{{count}} Artikel"
+  },
+  "date": {
+    "format": "DD.MM.YYYY",
+    "today": "Heute"
+  },
+  "currency": {
+    "symbol": "€",
+    "format": "{{amount}} €"
+  }
+}

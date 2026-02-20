@@ -1,0 +1,33 @@
+{
+  "welcome": "Welcome",
+  "greeting": "Hello, {{name}}",
+  "login": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign In",
+    "forgot": "Forgot Password?",
+    "success": "Login successful",
+    "error": "Invalid credentials"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "products": "Products",
+    "cart": "Cart"
+  },
+  "items": {
+    "zero": "No items",
+    "one": "{{count}} item",
+    "other": "{{count}} items"
+  },
+  "date": {
+    "format": "MM/DD/YYYY",
+    "today": "Today"
+  },
+  "currency": {
+    "symbol": "$",
+    "format": "${{amount}}"
+  }
+}

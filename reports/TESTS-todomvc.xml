@@ -1,0 +1,67 @@
+<testsuite name="todomvc.TodoMVC Application Testing" tests="2" errors="0" failures="0" skipped="0" time="1.239843" timestamp="2026-02-20T11:55:45.641533" hostname="Niranjans-MacBook-Pro.local"><testcase classname="todomvc.TodoMVC Application Testing" name="Add a new todo item" status="passed" time="0.428143"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @smoke
+  Scenario: Add a new todo item
+    Given I am on the TodoMVC page ... passed in 0.370s
+    When I add a new todo "Buy groceries" ... passed in 0.052s
+    Then I should see "Buy groceries" in the todo list ... passed in 0.004s
+    And the todo count should be 1 ... passed in 0.002s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Add a new todo item (Locale: en-US)
+
+✅ Finished scenario: Add a new todo item - Status.passed
+
+✓ Navigated to TodoMVC
+✓ Added new todo: Buy groceries
+✓ Found in list: Buy groceries
+✓ Todo count is correct: 1
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="todomvc.TodoMVC Application Testing" name="Mark todo as complete" status="passed" time="0.8117"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @smoke
+  Scenario: Mark todo as complete
+    Given I am on the TodoMVC page ... passed in 0.706s
+    Given I have added a todo "Complete homework" ... passed in 0.034s
+    When I mark the todo as complete ... passed in 0.062s
+    Then the todo should be marked as completed ... passed in 0.005s
+    And the active count should be 0 ... passed in 0.003s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Mark todo as complete (Locale: en-US)
+
+✅ Finished scenario: Mark todo as complete - Status.passed
+
+✓ Navigated to TodoMVC
+✓ Added todo (setup): Complete homework
+✓ Marked todo as complete
+✓ Todo is marked as completed
+✓ Active count is correct: 0
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase></testsuite>

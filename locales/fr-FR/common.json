@@ -1,0 +1,33 @@
+{
+  "welcome": "Bienvenue",
+  "greeting": "Bonjour, {{name}}",
+  "login": {
+    "title": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "forgot": "Mot de passe oublié?",
+    "success": "Connexion réussie",
+    "error": "Identifiants invalides"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact",
+    "products": "Produits",
+    "cart": "Panier"
+  },
+  "items": {
+    "zero": "Aucun article",
+    "one": "{{count}} article",
+    "other": "{{count}} articles"
+  },
+  "date": {
+    "format": "DD/MM/YYYY",
+    "today": "Aujourd'hui"
+  },
+  "currency": {
+    "symbol": "€",
+    "format": "{{amount}} €"
+  }
+}

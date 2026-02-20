@@ -1,0 +1,211 @@
+<testsuite name="login.User Login" tests="4" errors="3" failures="0" skipped="0" time="70.947626" timestamp="2026-02-20T13:10:09.787418" hostname="Niranjans-MacBook-Pro.local"><testcase classname="login.User Login" name="Successful login with valid credentials" status="error" time="30.10857"><error type="TimeoutError" message="Page.fill: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;#username&quot;)">
+<![CDATA[
+Failing step: When I enter username "testuser@example.com" ... error in 30.014s
+Location: features/login.feature:11
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features/steps/login_steps.py", line 18, in step_enter_username
+    context.login_page.enter_username(username)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/login_page.py", line 27, in enter_username
+    self.fill(self.USERNAME_INPUT, username)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/base_page.py", line 25, in fill
+    self.page.fill(selector, text)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 10177, in fill
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.fill(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        )
+        ^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_page.py", line 893, in fill
+    return await self._main_frame.fill(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 607, in fill
+    await self._fill(**locals_to_params(locals()))
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 619, in _fill
+    await self._channel.send("fill", self._timeout, locals_to_params(locals()))
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#username")
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @smoke @login
+  Scenario: Successful login with valid credentials
+    Given I am on the login page ... passed in 0.094s
+    When I enter username "testuser@example.com" ... error in 30.014s
+    And I enter password "Test@123" ... skipped in 0.000s
+    And I click the login button ... skipped in 0.000s
+    Then I should see the dashboard ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Successful login with valid credentials (Locale: en-US)
+
+❌ Finished scenario: Successful login with valid credentials - Status.error
+
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="login.User Login" name="Failed login with invalid credentials" status="error" time="30.073401"><error type="TimeoutError" message="Page.fill: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;#username&quot;)">
+<![CDATA[
+Failing step: When I enter username "invalid@example.com" ... error in 30.010s
+Location: features/login.feature:18
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/model.py", line 1991, in run
+    match.run(runner.context)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/behave/matchers.py", line 105, in run
+    self.func(context, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "features/steps/login_steps.py", line 18, in step_enter_username
+    context.login_page.enter_username(username)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/login_page.py", line 27, in enter_username
+    self.fill(self.USERNAME_INPUT, username)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/niranjan/Downloads/playwright-bdd-i18n-complete 2/features/pages/base_page.py", line 25, in fill
+    self.page.fill(selector, text)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 10177, in fill
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.fill(
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        )
+        ^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_page.py", line 893, in fill
+    return await self._main_frame.fill(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 607, in fill
+    await self._fill(**locals_to_params(locals()))
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 619, in _fill
+    await self._channel.send("fill", self._timeout, locals_to_params(locals()))
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#username")
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @negative @login
+  Scenario: Failed login with invalid credentials
+    Given I am on the login page ... passed in 0.064s
+    When I enter username "invalid@example.com" ... error in 30.010s
+    And I enter password "wrongpassword" ... skipped in 0.000s
+    And I click the login button ... skipped in 0.000s
+    Then I should see error message "Invalid credentials" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Failed login with invalid credentials (Locale: en-US)
+
+❌ Finished scenario: Failed login with invalid credentials - Status.error
+
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+
+]]>
+</system-err></testcase><testcase classname="login.User Login" name="Login with different users -- @1.1 " status="hook_error" time="10.765655"><error type="KeyboardInterrupt" message="">
+<![CDATA[
+Failing step: When I login with username "admin@example.com" and password "Admin@123" ... error in 10.704s
+Location: features/login.feature:25
+ABORTED: By user (KeyboardInterrupt).]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @login
+  Scenario Outline: Login with different users -- @1.1 
+    Given I am on the login page ... passed in 0.062s
+    When I login with username "admin@example.com" and password "Admin@123" ... error in 10.704s
+    Then I should see "Dashboard" ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+✓ Started scenario: Login with different users -- @1.1  (Locale: en-US)
+
+✓ Navigated to login page
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+ABORTED: KeyboardInterrupt
+
+]]>
+</system-err></testcase><testcase classname="login.User Login" name="Login with different users -- @1.2 " status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @login
+  Scenario Outline: Login with different users -- @1.2 
+    Given I am on the login page ... untested in 0.000s
+    When I login with username "user@example.com" and password "User@123" ... untested in 0.000s
+    Then I should see "Dashboard" ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
